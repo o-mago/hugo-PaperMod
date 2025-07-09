@@ -21,3 +21,7 @@
 {{- with ($scratch.Get "meta") }}
 {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
 {{- end -}}
+
+{{- with (partial "tags.html" .) }}
+    {{ . }}
+{{- end }}

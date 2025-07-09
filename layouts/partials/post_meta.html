@@ -22,6 +22,8 @@
 {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
 {{- end -}}
 
-{{- with (partial "tags.html" .) }}
-    {{ . }}
-{{- end }}
+<div class="post-list-tags">
+    {{- with (partial "tags.html" .) }}
+        {{ . }}
+    {{- end }}
+</div>
